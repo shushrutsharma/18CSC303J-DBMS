@@ -5,14 +5,16 @@ desc EMP40
 
 INSERT INTO EMP40 ("Emp_No", "Ename" , "DOJ" , "Dept" , "Dept_No", "Designation" , "Commision" , "Sal")   
     WITH input AS (   
-    SELECT 7369, 'Ludwig' ,  DATE '1981-09-30' , 'Sales', 10 ,  'Salesman' , 'TRUE'  , 950  FROM dual UNION ALL  
-    SELECT 7839, 'Sean'   ,  DATE '1985-09-20' , 'Sales', 30 ,  'Salesman' , 'TRUE'  , 900  FROM dual UNION ALL  
-    SELECT 7521, 'Charlie',  DATE '1983-10-30' , 'IT'   , 20 ,   'Analyst' , 'FALSE' , 1000 FROM dual UNION ALL  
-    SELECT 7934, 'Felix'  ,  DATE '1989-05-15' , 'None' , 40 ,   'Mangaer' , 'FALSE' , 1100 FROM dual UNION ALL  
-    SELECT 7788, 'Micheal',  DATE '1990-01-30' , 'IT'   , 50 ,   'Analyst' , 'TRUE'  , 1150 FROM dual   
+    SELECT 7369, 'Shushrut' ,  DATE '1981-09-30' , 'Sales', 10 ,  'Salesman' , 'TRUE'  , 950  FROM dual UNION ALL  
+    SELECT 7839, 'Viren'   ,  DATE '1985-09-20' , 'Sales', 30 ,  'Salesman' , 'TRUE'  , 900  FROM dual UNION ALL  
+    SELECT 7521, 'Vidhi',  DATE '1983-10-30' , 'IT'   , 20 ,   'Analyst' , 'FALSE' , 1000 FROM dual UNION ALL  
+    SELECT 7934, 'Sachin'  ,  DATE '1989-05-15' , 'None' , 40 ,   'Mangaer' , 'FALSE' , 1100 FROM dual UNION ALL  
+    SELECT 7788, 'Param',  DATE '1990-01-30' , 'IT'   , 50 ,   'Analyst' , 'TRUE'  , 1150 FROM dual   
     ) SELECT * FROM input ;
 
 SELECT * FROM EMP40;
+
+SELECT "Ename" FROM EMP40 WHERE "Dept_No" NOT IN (30, 40, 10);
 
 SELECT "Ename" FROM EMP40 WHERE "Designation" IN ('Salesman','Analyst');
 
