@@ -1,5 +1,4 @@
-create table emp_049(emp_no number(6),emp_name varchar2(30),job varchar2(30),dept_no
-number(6),sal number(6),dept_name varchar2(30));
+create table emp_049(emp_no number(6),emp_name varchar2(30),job varchar2(30),dept_no number(6),sal number(6),dept_name varchar2(30));
 Insert into emp_049 values (100,'shushrut','ASP',10,1700,’CSE’);
 insert into emp_049 values (101,'viren','AP',20,1500,’MECH’);
 insert into emp_049 values (102,'Vidhi','ASP',10,2500,’CSE’);
